@@ -15,7 +15,7 @@ app.post('/api/generate', async (c) => {
       return c.json({ error: 'API 키가 설정되지 않았습니다. 설정에서 Gemini API 키를 입력해주세요.' }, 400)
     }
     
-    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`
+    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`
     
     const payload = {
       contents: [{ 
